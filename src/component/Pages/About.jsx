@@ -38,10 +38,6 @@ import cottages from "../../assets/About/cottages.webp";
 import camps from "../../assets/About/camp.webp";
 import homestays from "../../assets/About/homestay.webp";
 import villa from "../../assets/About/villa.webp";
-// import CEO from "../../assets/About/Utkarsh.png";
-// import HOD from "../../assets/About/Basab.png";
-// import EMP from "../../assets/About/Shreshth.png";
-// import Founder from "../../assets/About/Sarvesh.jpeg";
 import IMG from "../../assets/About/dummy.jpg";
 import IMG1 from "../../assets/About/dummy1.jpg";
 import Hero from "../../assets/HomePage/houseImg.jpg";
@@ -332,100 +328,6 @@ const About = () => {
           ))}
         </Grid>
       </Container>
-
-      {/* Team Section */}
-      <Box className=" py-12 md:py-20">
-        <Container maxWidth="lg">
-          <Box className="text-center mb-12" data-aos="fade-up" sx={{}}>
-            <Typography
-              className="text-yellow-400 tracking-widest"
-              variant="overline"
-              fontSize={30}
-            >
-              OUR TEAM
-            </Typography>
-            <Typography
-              className=" flex justify-center items-center text-center"
-              variant="h5"
-              component="h2"
-              sx={{ color: theme === "dark" ? "white" : "" }}
-            >
-              The People Behind Saffron Stays
-            </Typography>
-          </Box>
-
-          <Grid container spacing={4}>
-            {teamMembers.map((member, index) => (
-              <Grid
-                item
-                xs={12}
-                sm={6}
-                md={3}
-                key={index}
-                data-aos="fade-up"
-                data-aos-delay={index * 100}
-              >
-                <Card className="h-full rounded-lg shadow-md overflow-hidden">
-                  <Box className="relative pt-[100%]">
-                    <CardMedia
-                      component="img"
-                      image={member.image}
-                      alt={member.name}
-                      className="absolute top-0 left-0 w-full h-full object-cover"
-                    />
-                  </Box>
-                  <CardContent
-                    sx={{
-                      bgcolor: theme === "dark" ? "#292A2D" : "white",
-                      color: theme === "dark" ? "white" : "",
-                    }}
-                  >
-                    <Typography
-                      className="font-semibold"
-                      variant="h6"
-                      component="h3"
-                    >
-                      {member.name}
-                    </Typography>
-                    <Typography
-                      className="text-yellow-600 mb-1"
-                      variant="subtitle2"
-                    >
-                      {member.position}
-                    </Typography>
-                    <Typography
-                      className={`theme==='dark' ? "text-white" : "text-gray-600"`}
-                      variant="body2"
-                    >
-                      {member.bio}
-                    </Typography>
-                    <Box className="mt-3 flex gap-2">
-                      <IconButton
-                        size="small"
-                        className="bg-gray-100 hover:bg-yellow-100"
-                      >
-                        <LinkedIn fontSize="small" />
-                      </IconButton>
-                      <IconButton
-                        size="small"
-                        className="bg-gray-100 hover:bg-yellow-100"
-                      >
-                        <Twitter fontSize="small" />
-                      </IconButton>
-                      <IconButton
-                        size="small"
-                        className="bg-gray-100 hover:bg-yellow-100"
-                      >
-                        <Email fontSize="small" />
-                      </IconButton>
-                    </Box>
-                  </CardContent>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </Box>
 
       {/* Testimonials Section */}
       <Container maxWidth="lg" className="py-12 md:py-20">
